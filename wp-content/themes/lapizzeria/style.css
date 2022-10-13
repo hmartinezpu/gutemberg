@@ -1,0 +1,17 @@
+/*
+    Theme Name: La Pizzeria
+    Theme URI: 
+    Author: Juan Pablo De la torre
+    Author URI: http://codigoconjuan.com
+    Description: Theme diseñado para pizzerias
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: CSS Grid, Gutenberg, Flexbox, mobile first
+    Text Domain: lapizzeria
+*/
+
+
+body{
+    background-color: red;
+}
