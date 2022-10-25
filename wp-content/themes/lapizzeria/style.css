@@ -1,7 +1,7 @@
 /*
     Theme Name: La Pizzeria
     Theme URI: 
-    Author: Juan Pablo De la torre
+    Author: jorge
     Author URI: http://codigoconjuan.com
     Description: Theme diseñado para pizzerias
     Version: 1.0
@@ -11,7 +11,147 @@
     Text Domain: lapizzeria
 */
 
+:root {
+    --fuentePrincipal: 'Open Sans', sans-serif; 
+    --fuenteHeadings:  'Raleway', sans-serif;
+
+    /** Colores **/
+    --rojo: #a61206;
+    --naranja: #f19f30;
+    --verde: #127427;
+
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --grisClaro: #c1c1c1;
+
+    --contenedor: 1200px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+p {
+    font-size: 1.8rem;
+    line-height: 5rem;
+}
+h1,h2,h3,h4 {
+    font-family: var(--fuenteHeadings);
+    font-weight: 900;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+    text-align:center;
+    color: var(--rojo);
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+/** Globales **/
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.contenedor {
+    width: 95%;
+    max-width: var(--contenedor);
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Utilidades **/
+.text-center {
+    text-align: center;
+}
+.texto-primario {
+    color: var(--rojo);
+}
+.seccion {
+    padding: 1rem;
+}
+
+/** Header **/
+.site-header {
+    padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .site-header .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logo {
+       grid-column: 2 / 3; 
+    }
+}
+.logo a {
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    width: 80%;
+    max-width: 30rem;
+}
+/** Redes sociales **/
+.sr-text {
+    display: none;
+}
+.sociales {
+    margin-top: 2rem;
+}
+.sociales ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 3rem);
+    grid-column-gap: 1rem;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .sociales ul {
+        justify-content: end;
+    }
+}
+.sociales a:before {
+    content: '';
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 3rem;
+}
+.sociales a[href*="facebook.com"]:before {
+    background-image: url(img/icons/facebook.svg);
+}
+.sociales a[href*="twitter.com"]:before {
+    background-image: url(img/icons/twitter.svg);
+}
+.sociales a[href*="youtube.com"]:before {
+    background-image: url(img/icons/youtube.svg);
+}
+.sociales a[href*="instagram.com"]:before {
+    background-image: url(img/icons/instagram.svg);
+}
+
 
 body{
-    background-color: red;
+    background-color: #a61206 !important;
 }

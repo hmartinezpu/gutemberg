@@ -17,3 +17,12 @@ function lapizzeria_styles() {
     wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');
+
+/** Menus */
+function lapizzeria_menus() {
+    register_nav_menus( array(
+        'header-menu' => 'Header Menu',
+        'redes-sociales' => 'Redes Sociales'
+    ));
+}
+add_action('init', 'lapizzeria_menus');
